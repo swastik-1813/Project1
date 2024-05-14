@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boudh Resort</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="css/style.css">
+    <style>
+        body{
+            font-family: "Baloo Bhaina 2", sans-serif;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/bg.jpg');
+        }
+        .left{
+            position: absolute;
+            display: inline-block;
+           /* border: 3px solid red;*/
+            left: 34px;
+            top:18px;
+        }
+        .left img{
+            width: 92px;
+        }
+        .left div{
+            text-align: center;
+            font-size: 15px;
+    line-height: 6px;
+        }
+
+        .mid{
+            display: block;
+            width: 35%;
+            margin: 18px auto;
+            /*border: 3px solid green;*/
+        }
+
+        .right{
+            position: absolute;
+            right: 34px;
+            top: 18px;
+           /* border: 3px solid yellow;*/
+        }
+        .navbar{
+            display: inline-block;
+
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 15px;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 34px 25px;
+        }
+        .navbar li a:hover, .navbar li a.active{
+            text-decoration: underline;
+        }
+        .btn{
+            margin: 0px 9px;
+            background-color: black;
+            color: white;
+            padding: 10px 8px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(33, 33, 33);
+        }
+        .container{
+            /*border: 3px solid grey;*/
+            margin: 138px 452px;
+            width: 40%;
+            padding: 121px 48px;
+            border-radius: 10px;
+            filter: invert(100%);
+          }
+          .form-group input{
+            text-align: center;
+    display: block;
+    width: 493px;
+    padding: 17px;
+    border: 8px;
+    font-size: 16px;
+        }
+        .container h1{
+            text-align: center;
+        }
+        .container button{
+            display: block;
+            width: 23%;
+            margin: auto;
+        }
+    </style>
+<body>
+    <header class="header">
+        <!---Left box for logo--->
+        <div class="left">
+            <img src="img/logo.jpeg" alt="">
+            <div>Boudh Resort</div>
+        </div>
+        <!--Mid box for navbar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Rooms Available</a></li>
+                <li><a href="#">Locator</a></li>
+            </ul>
+        </div>
+        <!--Right box for buttons-->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Book the Rooms</h1>
+        <form action="noaction.php">
+        <div class="form-group">
+            <input type="date" name="" placeholder="Check-In">
+        </div>
+        <div class="form-group"><input type="date" name="" placeholder="Check-Out"></div>
+        <div class="form-group"><input type="number" name="" placeholder="Adult"></div>
+        <div class="form-group"><input type="number" name="" placeholder="Children"></div>
+        <button class="btn">Submit</button>
+        </form>
+        </div>
+</body>
+</html>
